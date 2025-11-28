@@ -26,7 +26,7 @@ const Share = () => {
 
     const sharedUsers = [
         { id: 1, name: 'Dr. Sarah Smith', email: 'dr.smith@clinic.com', role: 'Viewer', status: 'Active' },
-        { id: 2, name: 'Dr. James Jones', email: 'dr.jones@hospital.org', role: 'Editor', status: 'Pending' },
+        { id: 2, name: 'Dr. James Jones', email: 'dr.jones@hospital.org', role: 'Viewer', status: 'Pending' },
     ];
 
     return (
@@ -120,7 +120,6 @@ const Share = () => {
                                             </SelectTrigger>
                                             <SelectContent>
                                                 <SelectItem value="viewer">Viewer</SelectItem>
-                                                <SelectItem value="editor">Editor</SelectItem>
                                                 <SelectItem value="remove" className="text-destructive">Remove</SelectItem>
                                             </SelectContent>
                                         </Select>
